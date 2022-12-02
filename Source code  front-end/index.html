@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+     <img class="picture" src="img1.jpg" />
+     <div class="login">
+        <div class="logo-img">
+        <img class="logo" src="img2.jpg" />
+    </div>
+        <div class="login-text">
+            <h2>Đăng Nhập</h2>
+        </div>
+        <form action="" method="">
+            <div class="input-group">
+                <div class="input-label">
+                    <p>Tên Tài Khoản:</p>
+                    <Input type="text" placeholder="Tên Tài Khoản" />
+                </div>
+                <div class="input-label">
+                    <p>Password:</p>
+                    <Input type="password" placeholder="Mật khẩu" />
+                </div>
+            </div>
+        </form>
+     </div>
+    </div>
+</body>
+</html>
+<style>
+    html, body {
+    width: 100vw;
+    height: 100vh;
+    }
+    *{
+        padding: 0;
+        margin : 0;
+    }
+    .main{
+        display : flex;
+        width: 100%;
+    }
+    .picture{
+        position: relative;
+        width: 50%;
+        height: 100vh;
+    }
+    .login{
+        display: block;
+        background-color: #94B1D0;
+        width:50%;
+        
+    }
+    .logo-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        margin-top: 5%;
+        Width:178px;
+        Height:178px;
+        border-radius: 50%;
+    }
+    .login-text{
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    .login-text h2{
+        Font-size: 32px;
+        Line-height: 100%;
+        Vertical-align: Top;
+        color: #ffffff ;
+        font-weight: bold;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .input-group{
+        display: block;
+    }
+    .input-label{
+        display: block;
+    }
+    .input-label p{
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 100%;
+        margin-bottom: 15px;
+        margin-left: 5px
+    }
+    .input-label input{
+        Width:356px;
+        Height:44px;
+        border-color: #ffffff;
+        border-radius: 50px ;
+        border-style: solid;
+        background-color: transparent;
+        margin-bottom: 15px;
+        padding-left:10px;
+    }
+    .input-label input::placeholder{
+        color: #D9D9D9;
+    }
+</style>
